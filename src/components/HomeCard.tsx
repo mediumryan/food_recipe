@@ -4,32 +4,32 @@ import image_info from './../images/info.webp';
 import image_nutrition from './../images/nutrition.jpg';
 
 interface HomeCardProps {
-    pathName: string;
+  pathName: string;
 }
 
 export default function HomeCard({ pathName }: HomeCardProps) {
-    const imageSrc =
-        pathName === 'Food Info'
-            ? image_info
-            : pathName === 'Recipe'
-            ? image_recipe
-            : pathName === 'Nutrition Analysis'
-            ? image_nutrition
-            : '';
+  const imageSrc =
+    pathName === 'Food Info'
+      ? image_info
+      : pathName === 'Recipe'
+      ? image_recipe
+      : pathName === 'Nutrition Analysis'
+      ? image_nutrition
+      : '';
 
-    const altText =
-        pathName === 'Food Info'
-            ? 'Food Info'
-            : pathName === 'Recipe'
-            ? 'Recipe'
-            : pathName === 'Nutrition Analysis'
-            ? 'Nutrition Analysis'
-            : '';
+  const altText =
+    pathName === 'Food Info'
+      ? 'Food Info'
+      : pathName === 'Recipe'
+      ? 'Recipe'
+      : pathName === 'Nutrition Analysis'
+      ? 'Nutrition Analysis'
+      : '';
 
-    return (
-        <HomeCardWrapper>
-            <img src={imageSrc} alt={altText} />
-            <p>{pathName}</p>
-        </HomeCardWrapper>
-    );
+  return (
+    <HomeCardWrapper>
+      <img src={imageSrc} alt={altText} />
+      <p>{pathName}</p>
+    </HomeCardWrapper>
+  );
 }

@@ -8,20 +8,20 @@ import FoodInfo from './pages/FoodInfo';
 import NutritionAnalysis from './pages/NutritionAnalysis';
 
 function App() {
-    return (
-        <MainWrapper>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />}></Route>
-                <Route path="/food-info" element={<FoodInfo />}></Route>
-                <Route path="/recipe" element={<Recipe />}></Route>
-                <Route
-                    path="/nutrition-analysis"
-                    element={<NutritionAnalysis />}
-                ></Route>
-            </Routes>
-        </MainWrapper>
-    );
+  return (
+    <MainWrapper>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/food-info" element={<FoodInfo />}></Route>
+        <Route path="/recipe" element={<Recipe />}></Route>
+        <Route
+          path="/nutrition-analysis"
+          element={<NutritionAnalysis />}
+        ></Route>
+      </Routes>
+    </MainWrapper>
+  );
 }
 
 export default App;
